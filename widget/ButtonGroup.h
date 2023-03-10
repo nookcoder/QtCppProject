@@ -31,6 +31,7 @@ public:
     void addMenuWidget(QString type);
 private:
     QVBoxLayout *vBoxLayout;
+    void printFileContent(FileContentWidget *widget ,QFile *file);
 };
 
 

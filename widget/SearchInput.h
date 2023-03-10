@@ -27,7 +27,6 @@ public:
 //    MainWindow *m_parent;
 
 public slots:
-    void getFilenameFromSearchBox(QLineEdit *edit);
     QFile *loadFile(QLineEdit *edit);
 private:
     QWidget *main;

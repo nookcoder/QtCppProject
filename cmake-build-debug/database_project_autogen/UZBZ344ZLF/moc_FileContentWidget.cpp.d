@@ -305,6 +305,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qanystringview.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qarraydata.h \
@@ -328,12 +329,15 @@
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qfile.h \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qfiledevice.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qflags.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qforeach.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qglobal.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \

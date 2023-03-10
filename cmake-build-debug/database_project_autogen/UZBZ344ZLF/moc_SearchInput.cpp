@@ -27,34 +27,31 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_SearchInput_t {
-    uint offsetsAndSizes[14];
+    uint offsetsAndSizes[12];
     char stringdata0[12];
-    char stringdata1[25];
-    char stringdata2[1];
-    char stringdata3[11];
-    char stringdata4[5];
-    char stringdata5[9];
-    char stringdata6[7];
+    char stringdata1[9];
+    char stringdata2[7];
+    char stringdata3[1];
+    char stringdata4[11];
+    char stringdata5[5];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_SearchInput_t::offsetsAndSizes) + ofs), len 
 Q_CONSTINIT static const qt_meta_stringdata_SearchInput_t qt_meta_stringdata_SearchInput = {
     {
         QT_MOC_LITERAL(0, 11),  // "SearchInput"
-        QT_MOC_LITERAL(12, 24),  // "getFilenameFromSearchBox"
-        QT_MOC_LITERAL(37, 0),  // ""
-        QT_MOC_LITERAL(38, 10),  // "QLineEdit*"
-        QT_MOC_LITERAL(49, 4),  // "edit"
-        QT_MOC_LITERAL(54, 8),  // "loadFile"
-        QT_MOC_LITERAL(63, 6)   // "QFile*"
+        QT_MOC_LITERAL(12, 8),  // "loadFile"
+        QT_MOC_LITERAL(21, 6),  // "QFile*"
+        QT_MOC_LITERAL(28, 0),  // ""
+        QT_MOC_LITERAL(29, 10),  // "QLineEdit*"
+        QT_MOC_LITERAL(40, 4)   // "edit"
     },
     "SearchInput",
-    "getFilenameFromSearchBox",
+    "loadFile",
+    "QFile*",
     "",
     "QLineEdit*",
-    "edit",
-    "loadFile",
-    "QFile*"
+    "edit"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -65,7 +62,7 @@ Q_CONSTINIT static const uint qt_meta_data_SearchInput[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       1,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -73,12 +70,10 @@ Q_CONSTINIT static const uint qt_meta_data_SearchInput[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   26,    2, 0x0a,    1 /* Public */,
-       5,    1,   29,    2, 0x0a,    3 /* Public */,
+       1,    1,   20,    3, 0x0a,    1 /* Public */,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
-    0x80000000 | 6, 0x80000000 | 3,    4,
+    0x80000000 | 2, 0x80000000 | 4,    5,
 
        0        // eod
 };
@@ -92,9 +87,6 @@ Q_CONSTINIT const QMetaObject SearchInput::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_SearchInput_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<SearchInput, std::true_type>,
-        // method 'getFilenameFromSearchBox'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QLineEdit *, std::false_type>,
         // method 'loadFile'
         QtPrivate::TypeAndForceComplete<QFile *, std::false_type>,
         QtPrivate::TypeAndForceComplete<QLineEdit *, std::false_type>
@@ -108,8 +100,7 @@ void SearchInput::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         auto *_t = static_cast<SearchInput *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->getFilenameFromSearchBox((*reinterpret_cast< std::add_pointer_t<QLineEdit*>>(_a[1]))); break;
-        case 1: { QFile* _r = _t->loadFile((*reinterpret_cast< std::add_pointer_t<QLineEdit*>>(_a[1])));
+        case 0: { QFile* _r = _t->loadFile((*reinterpret_cast< std::add_pointer_t<QLineEdit*>>(_a[1])));
             if (_a[0]) *reinterpret_cast< QFile**>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -117,13 +108,6 @@ void SearchInput::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
         case 0:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
-            case 0:
-                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QLineEdit* >(); break;
-            }
-            break;
-        case 1:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
@@ -153,13 +137,13 @@ int SearchInput::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 1;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 1;
     }
     return _id;
 }

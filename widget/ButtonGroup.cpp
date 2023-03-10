@@ -52,6 +52,12 @@ ButtonGroup::ButtonGroup(MainWindow *parent,
     setLayout(vBoxLayout);
 }
 
+void ButtonGroup::printFileContent(FileContentWidget *widget ,QFile *file) {
+    QTextStream in(file);
+    QString fileContents = in.readAll();
+    widget->fileContentBox->setText(fileContents);
+}
+
 void ButtonGroup::addMenuWidget(QString menu) {
     this->m_parent->clearMainWidget();
 
@@ -66,6 +72,7 @@ void ButtonGroup::addMenuWidget(QString menu) {
 
     else if(menu == "print"){
         this->m_contentWidget = new FileContentWidget();
+        this->printFileContent(this->m_contentWidget,this->m_parent->currentFile);
         this->m_parent->rightLayout->addWidget(this->m_contentWidget);
     }
 
