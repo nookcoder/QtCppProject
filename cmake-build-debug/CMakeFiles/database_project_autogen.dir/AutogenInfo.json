@@ -224,12 +224,6 @@
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/file-load/components/FileLoadButton.h",
-			"MU",
-			"35RH7L4XOO/moc_FileLoadButton.cpp",
-			null
-		],
-		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -319,11 +313,6 @@
 	[
 		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/components/MenuButton.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/file-load/components/FileLoadButton.cpp",
 			"MU",
 			null
 		],

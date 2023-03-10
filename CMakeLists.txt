@@ -13,8 +13,6 @@ add_executable(database_project
         main.cpp
         mainwindow.cpp
         mainwindow.h
-        file-load/components/FileLoadButton.cpp
-        file-load/components/FileLoadButton.h
         widget/SearchInput.cpp
         widget/SearchInput.h
         modal/ResultModal.cpp
