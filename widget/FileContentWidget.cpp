@@ -5,7 +5,7 @@
 #include "FileContentWidget.h"
 FileContentWidget::FileContentWidget(QWidget *parent, QString fileContent) : QWidget(parent){
     delete layout();
-    fileContentBox = new QTextEdit(this);
+    fileContentBox = new QTextEdit(this->parentWidget());
     QVBoxLayout *layout = new QVBoxLayout(this);
 
     fileContentBox->setText(fileContent);

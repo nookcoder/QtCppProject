@@ -224,6 +224,12 @@
 			null
 		],
 		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/global.h",
+			"MU",
+			"EWIEGA46WW/moc_global.cpp",
+			null
+		],
+		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -313,6 +319,11 @@
 	[
 		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/components/MenuButton.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/global.cpp",
 			"MU",
 			null
 		],

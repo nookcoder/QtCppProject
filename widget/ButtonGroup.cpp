@@ -12,7 +12,6 @@ ButtonGroup::ButtonGroup(MainWindow *parent,
     m_searchWidget = searchWidget;
     m_contentWidget = contentWidget;
 
-
     // create Buttons For Menu
     QPushButton *fileLoad = new MenuButton( this, "FileLoad");
     QPushButton *filePrint = new MenuButton(this, "FilePrint");
@@ -45,10 +44,11 @@ ButtonGroup::ButtonGroup(MainWindow *parent,
     setLayout(vBoxLayout);
 }
 
-void ButtonGroup::printFileContent(FileContentWidget *widget ,QFile *file) {
+QString ButtonGroup::printFileContent(FileContentWidget *widget ,QFile *file) {
     QTextStream in(file);
     QString fileContents = in.readAll();
-    widget->fileContentBox->setText(fileContents);
+//    widget->fileContentBox->setText(fileContents);
+    return fileContents;
 }
 
 void ButtonGroup::addMenuWidget(QString menu) {
@@ -56,18 +56,27 @@ void ButtonGroup::addMenuWidget(QString menu) {
 
     if (menu == "load"){
         this->m_searchWidget = new SearchInput(this->m_parent);
-        if(this->m_searchWidget->edit == nullptr) {
-            this->m_searchWidget->edit = new QLineEdit();
-        }
-        this->m_parent->bindEventOfSearchButton(this->m_searchWidget, this->m_parent);
+        // 검색 버튼 이벤트 추가
+        connect(this->m_searchWidget->searchButton, &QPushButton::clicked, this->m_parent, [this](){
+            currentFile = m_searchWidget->loadFile(m_searchWidget->edit);
+            this->is_Load = true;
+        });
         this->m_parent->rightLayout->addWidget(this->m_searchWidget);
     }
 
     else if(menu == "print"){
-        this->m_contentWidget = new FileContentWidget();
-        if(this->m_parent->currentFile->isOpen()){
-            this->printFileContent(this->m_contentWidget,this->m_parent->currentFile);
+
+        // 파일 새로운 거 검색 했을 때 파일 내용 set
+        if (this->is_Load && currentFile->isOpen()) { // 파일 찾기 성공
+            currentFileContents =  this->printFileContent(this->m_contentWidget, currentFile);
+        } else if (this->is_Load && !currentFile->isOpen()) { // 파일 찾기 실패
+            currentFileContents = "Fail Loading File";
         }
+        this->is_Load = false;
+
+        qDebug() << currentFileContents;
+        this->m_contentWidget = new FileContentWidget(this->m_parent, currentFileContents);
+
         this->m_parent->rightLayout->addWidget(this->m_contentWidget);
     }
 

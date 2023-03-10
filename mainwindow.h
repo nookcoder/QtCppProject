@@ -7,6 +7,7 @@
 #include "widget/FileContentWidget.h"
 #include "widget/SearchInput.h"
 #include "components/MenuButton.h"
+#include "global.h"
 
 namespace Ui {
     class MainWindow;
@@ -25,6 +26,7 @@ public:
     QWidget *rightWidget;
     QVBoxLayout *rightLayout;
     QFile *currentFile;
+    QString currentFileContents;
 
     // Widgets
     FileContentWidget *fileContentWidget;

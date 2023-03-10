@@ -13,6 +13,7 @@
 #include "SearchInput.h"
 #include "FileContentWidget.h"
 #include "../mainwindow.h"
+#include "../global.h"
 
 using namespace std;
 class ButtonGroup : public QWidget {
@@ -31,7 +32,11 @@ public:
     void addMenuWidget(QString type);
 private:
     QVBoxLayout *vBoxLayout;
-    void printFileContent(FileContentWidget *widget ,QFile *file);
+    QString printFileContent(FileContentWidget *widget ,QFile *file);
+
+private:
+    bool is_Load = false;
+    QString contents;
 };
 
 

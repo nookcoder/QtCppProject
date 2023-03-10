@@ -9,7 +9,7 @@ SearchInput::SearchInput(QWidget *parent): QWidget(parent) {
 //    m_parent = parent;
     delete layout();
     searchResult = "";
-    edit = new QLineEdit(this);
+    edit = new QLineEdit();
     searchButton = new QPushButton("Search");
     QHBoxLayout* hLayout = new QHBoxLayout;
     hLayout->addWidget(edit);
