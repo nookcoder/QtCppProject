@@ -14,20 +14,13 @@ ButtonGroup::ButtonGroup(MainWindow *parent,
 
 
     // create Buttons For Menu
-    QPushButton *fileLoad = new QPushButton("FileLoad", this);
-    QPushButton *filePrint = new QPushButton("FilePrint", this);
-    QPushButton *fileUpdate = new QPushButton("FileUpdate", this);
-    QPushButton *fileDelete = new QPushButton("FileDelete", this);
-    QPushButton *fileFind = new QPushButton("FileFind", this);
-    QPushButton *fileSave = new QPushButton("FileSave", this);
-    QPushButton *exit = new QPushButton("Exit", this);
-    fileLoad->setFixedSize(100,50);
-    filePrint->setFixedSize(100,50);
-    fileUpdate->setFixedSize(100,50);
-    fileDelete->setFixedSize(100,50);
-    fileFind->setFixedSize(100,50);
-    fileSave->setFixedSize(100,50);
-    exit->setFixedSize(100,50);
+    QPushButton *fileLoad = new MenuButton( this, "FileLoad");
+    QPushButton *filePrint = new MenuButton(this, "FilePrint");
+    QPushButton *fileUpdate = new MenuButton(this, "FileUpdate");
+    QPushButton *fileDelete = new MenuButton(this,"FileDelete");
+    QPushButton *fileFind = new MenuButton(this, "FileFind");
+    QPushButton *fileSave = new MenuButton(this, "FileSave");
+    QPushButton *exit = new MenuButton(this, "Exit");
     // add click event
     // file load
     connect(fileLoad, &QPushButton::clicked, fileLoad, [this]() {
@@ -72,7 +65,9 @@ void ButtonGroup::addMenuWidget(QString menu) {
 
     else if(menu == "print"){
         this->m_contentWidget = new FileContentWidget();
-        this->printFileContent(this->m_contentWidget,this->m_parent->currentFile);
+        if(this->m_parent->currentFile->isOpen()){
+            this->printFileContent(this->m_contentWidget,this->m_parent->currentFile);
+        }
         this->m_parent->rightLayout->addWidget(this->m_contentWidget);
     }
 

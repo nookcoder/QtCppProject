@@ -6,6 +6,7 @@
 #include <QFile>
 #include "widget/FileContentWidget.h"
 #include "widget/SearchInput.h"
+#include "components/MenuButton.h"
 
 namespace Ui {
     class MainWindow;

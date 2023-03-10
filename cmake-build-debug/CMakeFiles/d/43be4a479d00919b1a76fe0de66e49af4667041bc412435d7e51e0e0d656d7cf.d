@@ -413,6 +413,8 @@ database_project_autogen/timestamp: \
   CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.24.2/CMakeSystem.cmake \
   database_project_autogen/moc_predefs.h \
+  /Users/wook/Desktop/세종대/database-project/components/MenuButton.cpp \
+  /Users/wook/Desktop/세종대/database-project/components/MenuButton.h \
   /Users/wook/Desktop/세종대/database-project/file-load/components/FileLoadButton.cpp \
   /Users/wook/Desktop/세종대/database-project/file-load/components/FileLoadButton.h \
   /Users/wook/Desktop/세종대/database-project/main.cpp \
