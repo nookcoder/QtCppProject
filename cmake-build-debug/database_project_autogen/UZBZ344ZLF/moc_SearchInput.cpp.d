@@ -305,6 +305,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stdarg.h \
+  /Users/wook/Desktop/세종대/database-project/global.h \
   /Users/wook/Desktop/세종대/database-project/modal/ResultModal.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \

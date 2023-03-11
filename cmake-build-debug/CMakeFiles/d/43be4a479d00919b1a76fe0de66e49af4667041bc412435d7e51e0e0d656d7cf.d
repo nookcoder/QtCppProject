@@ -361,6 +361,8 @@ database_project_autogen/timestamp: \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.cpp \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.h \
+  /Users/wook/Desktop/세종대/database-project/widget/UpdateFile.cpp \
+  /Users/wook/Desktop/세종대/database-project/widget/UpdateFile.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QString \

@@ -258,6 +258,12 @@
 			"MU",
 			"UZBZ344ZLF/moc_SearchInput.cpp",
 			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/UpdateFile.h",
+			"MU",
+			"UZBZ344ZLF/moc_UpdateFile.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -354,6 +360,11 @@
 		],
 		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SearchInput.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/UpdateFile.cpp",
 			"MU",
 			null
 		]

@@ -29,6 +29,10 @@ ButtonGroup::ButtonGroup(MainWindow *parent,
     connect(filePrint, &QPushButton::clicked, filePrint, [this]() {
         ButtonGroup::addMenuWidget("print");
     });
+    // file Update
+    connect(fileUpdate, &QPushButton::clicked, fileUpdate, [this](){
+        ButtonGroup::addMenuWidget("update");
+    });
 
     // set Layout
     vBoxLayout = new QVBoxLayout;
@@ -65,19 +69,15 @@ void ButtonGroup::addMenuWidget(QString menu) {
     }
 
     else if(menu == "print"){
-
-        // 파일 새로운 거 검색 했을 때 파일 내용 set
-        if (this->is_Load && currentFile->isOpen()) { // 파일 찾기 성공
-            currentFileContents =  this->printFileContent(this->m_contentWidget, currentFile);
-        } else if (this->is_Load && !currentFile->isOpen()) { // 파일 찾기 실패
-            currentFileContents = "Fail Loading File";
-        }
-        this->is_Load = false;
-
-        qDebug() << currentFileContents;
+        // init Widget && add
         this->m_contentWidget = new FileContentWidget(this->m_parent, currentFileContents);
-
         this->m_parent->rightLayout->addWidget(this->m_contentWidget);
+    }
+
+
+    else if(menu == "update"){
+        UpdateFile *updateFileWidget = new UpdateFile(this->m_parent);
+        this->m_parent->rightLayout->addWidget(updateFileWidget);
     }
 
     this->m_parent->rightWidget->update();

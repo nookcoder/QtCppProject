@@ -4,3 +4,4 @@
 #include "UZBZ344ZLF/moc_ButtonGroup.cpp"
 #include "UZBZ344ZLF/moc_FileContentWidget.cpp"
 #include "UZBZ344ZLF/moc_SearchInput.cpp"
+#include "UZBZ344ZLF/moc_UpdateFile.cpp"

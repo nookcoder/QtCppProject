@@ -23,9 +23,12 @@ QFile *SearchInput::loadFile(QLineEdit *edit) {
     if(file->open(QIODevice::ReadOnly)) {
         ResultModal *const pModal = new ResultModal(this,"Success Loading File");
         pModal->openModal();
+        QTextStream in(file);
+        currentFileContents = in.readAll();
         return file;
     }
 
+    currentFileContents = "Fail Loading File";
     ResultModal *const pModal = new ResultModal(this,"Fail Loading File");
     pModal->openModal();
     return new QFile();

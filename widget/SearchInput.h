@@ -16,6 +16,7 @@
 #include <QMainWindow>
 #include "../modal/ResultModal.h"
 
+#include "../global.h"
 using namespace std;
 class SearchInput : public QWidget{
     Q_OBJECT

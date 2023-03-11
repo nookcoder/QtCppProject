@@ -10,10 +10,11 @@
 #include <QLayout>
 #include <QPushButton>
 #include <QMainWindow>
-#include "SearchInput.h"
-#include "FileContentWidget.h"
 #include "../mainwindow.h"
 #include "../global.h"
+#include "SearchInput.h"
+#include "FileContentWidget.h"
+#include "UpdateFile.h"
 
 using namespace std;
 class ButtonGroup : public QWidget {
