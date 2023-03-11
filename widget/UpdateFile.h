@@ -13,6 +13,7 @@
 #include <QTextEdit>
 #include <QBoxLayout>
 #include "../global.h"
+#include "../modal/ResultModal.h"
 
 class UpdateFile : public QWidget {
 Q_OBJECT
@@ -20,6 +21,8 @@ public:
     UpdateFile(QWidget *parent);
 
 private slots:
+    void changeFileContents(QString target, QString rename);
+
 private:
     QLabel *targetLabel = new QLabel("Want to modify");
     QLabel *renameLabel = new QLabel("how to modify");
@@ -27,9 +30,10 @@ private:
     QLineEdit *target = new QLineEdit();
     QLineEdit *rename = new QLineEdit();
 
-    QPushButton *runButton = new QPushButton("Change");
+    QPushButton *changeButton = new QPushButton("Change");
 
     QTextEdit *fileContent;
+    QString tempContents = currentFileContents;
 
     void initLayout();
 };

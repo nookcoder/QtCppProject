@@ -34,7 +34,6 @@ public:
 
     // Functions
     void clearMainWidget();
-    void bindEventOfSearchButton(SearchInput *searchWidget, MainWindow *context); // Search Button 이벤트 바인딩
 
 private:
     void setInitLayout();

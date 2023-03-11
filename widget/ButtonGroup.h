@@ -15,29 +15,41 @@
 #include "SearchInput.h"
 #include "FileContentWidget.h"
 #include "UpdateFile.h"
+#include "DeleteFileWidget.h"
 
 using namespace std;
+
 class ButtonGroup : public QWidget {
-    Q_OBJECT
+Q_OBJECT
 public:
     ButtonGroup
-    (
-            MainWindow *parent,
-            SearchInput *searchWidget,
-            FileContentWidget *contentWidget
-    );
+            (
+                    MainWindow *parent,
+                    SearchInput *searchWidget,
+                    FileContentWidget *contentWidget
+            );
+
     MainWindow *m_parent;
     SearchInput *m_searchWidget;
     FileContentWidget *m_contentWidget;
 
-    void addMenuWidget(QString type);
-private:
-    QVBoxLayout *vBoxLayout;
-    QString printFileContent(FileContentWidget *widget ,QFile *file);
+private slots:
+    void saveNewFile(); // 파일 저장하기
 
 private:
-    bool is_Load = false;
+    void initLayout(); // 초기화
+    void bindButtonEvent(); // 버튼 이벤트 바인딩
+    void changeMenu(QString type); // 메뉴 전환
+    QVBoxLayout *vBoxLayout;
     QString contents;
+
+    QPushButton *fileLoad;
+    QPushButton *filePrint;
+    QPushButton *fileUpdate;
+    QPushButton *fileDelete;
+    QPushButton *fileFind;
+    QPushButton *fileSave;
+    QPushButton *exit;
 };
 
 

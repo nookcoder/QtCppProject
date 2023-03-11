@@ -248,6 +248,12 @@
 			null
 		],
 		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/DeleteFileWidget.h",
+			"MU",
+			"UZBZ344ZLF/moc_DeleteFileWidget.cpp",
+			null
+		],
+		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FileContentWidget.h",
 			"MU",
 			"UZBZ344ZLF/moc_FileContentWidget.cpp",
@@ -350,6 +356,11 @@
 		],
 		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/ButtonGroup.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/DeleteFileWidget.cpp",
 			"MU",
 			null
 		],

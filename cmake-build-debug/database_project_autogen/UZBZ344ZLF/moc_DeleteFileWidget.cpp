@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'UpdateFile.h'
+** Meta object code from reading C++ file 'DeleteFileWidget.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
@@ -7,11 +7,11 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../widget/UpdateFile.h"
+#include "../../../widget/DeleteFileWidget.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'UpdateFile.h' doesn't include <QObject>."
+#error "The header file 'DeleteFileWidget.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -26,34 +26,31 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_UpdateFile_t {
-    uint offsetsAndSizes[10];
-    char stringdata0[11];
+struct qt_meta_stringdata_DeleteFileWidget_t {
+    uint offsetsAndSizes[8];
+    char stringdata0[17];
     char stringdata1[19];
     char stringdata2[1];
     char stringdata3[7];
-    char stringdata4[7];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_UpdateFile_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_UpdateFile_t qt_meta_stringdata_UpdateFile = {
+    uint(sizeof(qt_meta_stringdata_DeleteFileWidget_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_DeleteFileWidget_t qt_meta_stringdata_DeleteFileWidget = {
     {
-        QT_MOC_LITERAL(0, 10),  // "UpdateFile"
-        QT_MOC_LITERAL(11, 18),  // "changeFileContents"
-        QT_MOC_LITERAL(30, 0),  // ""
-        QT_MOC_LITERAL(31, 6),  // "target"
-        QT_MOC_LITERAL(38, 6)   // "rename"
+        QT_MOC_LITERAL(0, 16),  // "DeleteFileWidget"
+        QT_MOC_LITERAL(17, 18),  // "deleteFileContents"
+        QT_MOC_LITERAL(36, 0),  // ""
+        QT_MOC_LITERAL(37, 6)   // "target"
     },
-    "UpdateFile",
-    "changeFileContents",
+    "DeleteFileWidget",
+    "deleteFileContents",
     "",
-    "target",
-    "rename"
+    "target"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_UpdateFile[] = {
+Q_CONSTINIT static const uint qt_meta_data_DeleteFileWidget[] = {
 
  // content:
       10,       // revision
@@ -67,57 +64,56 @@ Q_CONSTINIT static const uint qt_meta_data_UpdateFile[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    2,   20,    2, 0x08,    1 /* Private */,
+       1,    1,   20,    2, 0x08,    1 /* Private */,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString, QMetaType::QString,    3,    4,
+    QMetaType::Void, QMetaType::QString,    3,
 
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject UpdateFile::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject DeleteFileWidget::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_UpdateFile.offsetsAndSizes,
-    qt_meta_data_UpdateFile,
+    qt_meta_stringdata_DeleteFileWidget.offsetsAndSizes,
+    qt_meta_data_DeleteFileWidget,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_UpdateFile_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_DeleteFileWidget_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<UpdateFile, std::true_type>,
-        // method 'changeFileContents'
+        QtPrivate::TypeAndForceComplete<DeleteFileWidget, std::true_type>,
+        // method 'deleteFileContents'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>
     >,
     nullptr
 } };
 
-void UpdateFile::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void DeleteFileWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<UpdateFile *>(_o);
+        auto *_t = static_cast<DeleteFileWidget *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->changeFileContents((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
+        case 0: _t->deleteFileContents((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
 }
 
-const QMetaObject *UpdateFile::metaObject() const
+const QMetaObject *DeleteFileWidget::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *UpdateFile::qt_metacast(const char *_clname)
+void *DeleteFileWidget::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_UpdateFile.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_DeleteFileWidget.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int UpdateFile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int DeleteFileWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)

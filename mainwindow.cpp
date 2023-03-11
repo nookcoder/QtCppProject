@@ -33,14 +33,6 @@ void MainWindow::setInitLayout() {
     this->setCentralWidget(main);
 }
 
-// 검색 버튼 클릭 시 이벤트 바인딩
-void MainWindow::bindEventOfSearchButton(SearchInput *m_searchWidget, MainWindow *context) {
-    connect(m_searchWidget->searchButton, &QPushButton::clicked, m_searchWidget, [&m_searchWidget, context](){
-        qDebug() << "clicked";
-        context->currentFile = m_searchWidget->loadFile(m_searchWidget->edit);
-    });
-}
-
 // 위젯 바꾸기
 void MainWindow::clearMainWidget() {
     while (QLayoutItem *item = this->rightWidget->layout()->takeAt(0)){

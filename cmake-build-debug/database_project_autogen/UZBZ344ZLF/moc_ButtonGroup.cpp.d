@@ -309,6 +309,7 @@
   /Users/wook/Desktop/세종대/database-project/global.h \
   /Users/wook/Desktop/세종대/database-project/mainwindow.h \
   /Users/wook/Desktop/세종대/database-project/modal/ResultModal.h \
+  /Users/wook/Desktop/세종대/database-project/widget/DeleteFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.h \
   /Users/wook/Desktop/세종대/database-project/widget/UpdateFile.h \

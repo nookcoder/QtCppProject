@@ -20,7 +20,7 @@ SearchInput::SearchInput(QWidget *parent): QWidget(parent) {
 QFile *SearchInput::loadFile(QLineEdit *edit) {
     searchResult = edit->text();
     QFile *file = new QFile(searchResult);
-    if(file->open(QIODevice::ReadOnly)) {
+    if(file->open(QIODevice::ReadWrite)) {
         ResultModal *const pModal = new ResultModal(this,"Success Loading File");
         pModal->openModal();
         QTextStream in(file);

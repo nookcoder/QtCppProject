@@ -9,6 +9,7 @@ FileContentWidget::FileContentWidget(QWidget *parent, QString fileContent) : QWi
     QVBoxLayout *layout = new QVBoxLayout(this);
 
     fileContentBox->setText(fileContent);
+    fileContentBox->setReadOnly(true);
     layout->addWidget(fileContentBox);
     setLayout(layout);
 }
