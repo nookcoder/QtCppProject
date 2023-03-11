@@ -311,6 +311,7 @@
   /Users/wook/Desktop/세종대/database-project/widget/ButtonGroup.h \
   /Users/wook/Desktop/세종대/database-project/widget/DeleteFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.h \
+  /Users/wook/Desktop/세종대/database-project/widget/FindFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SaveFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.h \
   /Users/wook/Desktop/세종대/database-project/widget/UpdateFile.h \

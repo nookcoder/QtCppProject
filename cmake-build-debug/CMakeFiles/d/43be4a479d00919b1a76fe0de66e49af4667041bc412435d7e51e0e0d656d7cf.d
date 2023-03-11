@@ -361,6 +361,8 @@ database_project_autogen/timestamp: \
   /Users/wook/Desktop/세종대/database-project/widget/DeleteFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.cpp \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.h \
+  /Users/wook/Desktop/세종대/database-project/widget/FindFileWidget.cpp \
+  /Users/wook/Desktop/세종대/database-project/widget/FindFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SaveFileWidget.cpp \
   /Users/wook/Desktop/세종대/database-project/widget/SaveFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.cpp \

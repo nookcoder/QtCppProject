@@ -31,26 +31,27 @@ void MainWindow::bindButtonGroupEvent() {
     bindMenuButtonEvent(buttonGroup->filePrint, "print");
     bindMenuButtonEvent(buttonGroup->fileUpdate, "update");
     bindMenuButtonEvent(buttonGroup->fileDelete, "delete");
+    bindMenuButtonEvent(buttonGroup->fileFind, "find");
     bindMenuButtonEvent(buttonGroup->fileSave, "save");
 }
 
 // 메뉴 버튼 이벤트 맵핑
 void MainWindow::bindMenuButtonEvent(QPushButton *button, QString menu) {
-    connect(button, &QPushButton::clicked,this, [this, menu](){
+    connect(button, &QPushButton::clicked, this, [this, menu]() {
         changeMenu(menu);
     });
 }
 
 // 뒤로 가기 기능 맵핑
 void MainWindow::bindBackToMenuEvent(QPushButton *button) {
-    connect(button, &QPushButton::clicked, this, [this](){
+    connect(button, &QPushButton::clicked, this, [this]() {
         backToMenu();
     });
 }
 
 // 화면 지우기
 void MainWindow::clearMainWidget() {
-    while (QLayoutItem *item = mainLayout->takeAt(0)){
+    while (QLayoutItem *item = mainLayout->takeAt(0)) {
         delete item->widget();
         delete item;
     }
@@ -58,40 +59,37 @@ void MainWindow::clearMainWidget() {
 
 // 메뉴 이동
 void MainWindow::changeMenu(QString menu) {
-        this->clearMainWidget();
+    this->clearMainWidget();
 
-        if (menu == "load"){
-            searchWidget = new SearchInput(this);
-            bindBackToMenuEvent(searchWidget->backToMenu);
-            mainLayout->addWidget(this->searchWidget);
-        }
+    if (menu == "load") {
+        searchWidget = new SearchInput(this);
+        bindBackToMenuEvent(searchWidget->backToMenu);
+        bindBackToMenuEvent(searchWidget->searchButton);
+        mainLayout->addWidget(this->searchWidget);
+    } else if (menu == "print") {
+        // init Widget && add
+        fileContentWidget = new FileContentWidget(this, currentFileContents);
+        bindBackToMenuEvent(fileContentWidget->backToMenu);
+        mainLayout->addWidget(this->fileContentWidget);
+    } else if (menu == "update") {
+        updateFileWidget = new UpdateFile(this);
+        bindBackToMenuEvent(updateFileWidget->backToMenu);
+        mainLayout->addWidget(updateFileWidget);
+    } else if (menu == "delete") {
+        deleteFileWidget = new DeleteFileWidget(this);
+        bindBackToMenuEvent(deleteFileWidget->back);
+        this->mainLayout->addWidget(deleteFileWidget);
+    } else if (menu == "find") {
+        findFileWidget = new FindFileWidget(this);
+        bindBackToMenuEvent(findFileWidget->backToMenu);
+        this->mainLayout->addWidget(findFileWidget);
+    } else if (menu == "save") {
+        saveFileWidget = new SaveFileWidget(this);
+        bindBackToMenuEvent(saveFileWidget->backToMenu);
+        bindBackToMenuEvent(saveFileWidget->save);
+        this->mainLayout->addWidget(saveFileWidget);
+    }
 
-        else if(menu == "print"){
-            // init Widget && add
-            fileContentWidget = new FileContentWidget(this, currentFileContents);
-            bindBackToMenuEvent(fileContentWidget->backToMenu);
-            mainLayout->addWidget(this->fileContentWidget);
-        }
-
-        else if(menu == "update"){
-            updateFileWidget = new UpdateFile(this);
-            bindBackToMenuEvent(updateFileWidget->backToMenu);
-            mainLayout->addWidget(updateFileWidget);
-        }
-
-        else if(menu == "delete") {
-            deleteFileWidget = new DeleteFileWidget(this);
-            bindBackToMenuEvent(deleteFileWidget->back);
-            this->mainLayout->addWidget(deleteFileWidget);
-        }
-
-        else if(menu == "save") {
-            saveFileWidget = new SaveFileWidget(this);
-            bindBackToMenuEvent(saveFileWidget->backToMenu);
-            bindBackToMenuEvent(saveFileWidget->save);
-            this->mainLayout->addWidget(saveFileWidget);
-        }
-
-        this->mainLayout->update();
+    this->mainLayout->update();
 }
 
