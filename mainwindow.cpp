@@ -33,6 +33,7 @@ void MainWindow::bindButtonGroupEvent() {
     bindMenuButtonEvent(buttonGroup->fileDelete, "delete");
     bindMenuButtonEvent(buttonGroup->fileFind, "find");
     bindMenuButtonEvent(buttonGroup->fileSave, "save");
+    connect(buttonGroup->exit, &QPushButton::clicked, this, &QMainWindow::close);
 }
 
 // 메뉴 버튼 이벤트 맵핑
