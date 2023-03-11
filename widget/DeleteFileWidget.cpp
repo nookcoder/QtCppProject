@@ -20,11 +20,14 @@ DeleteFileWidget::DeleteFileWidget(QWidget *parent) : QWidget(parent){
 }
 
 void DeleteFileWidget::initLayout() {
+    QWidget *main = new QWidget(this);
+    QGridLayout *grid = new QGridLayout;
     QVBoxLayout *parentLayout = new QVBoxLayout;
     QHBoxLayout *targetLayout = new QHBoxLayout;
 
     QWidget *targetWidget = new QWidget;
 
+    back->setFixedSize(80,30);
     fileContent = new QTextEdit(this->parentWidget());
     fileContent->setText(tempContents);
     fileContent->setReadOnly(true);
@@ -37,8 +40,11 @@ void DeleteFileWidget::initLayout() {
     parentLayout->addWidget(deleteButton);
     parentLayout->addWidget(fileContent);
 
+    main->setLayout(parentLayout);
+    grid->addWidget(back, 0,0);
+    grid->addWidget(main, 1,0);
 
-    this->setLayout(parentLayout);
+    this->setLayout(grid);
 }
 
 void DeleteFileWidget::deleteFileContents(QString target) {

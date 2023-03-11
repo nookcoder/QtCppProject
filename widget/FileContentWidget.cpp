@@ -4,18 +4,26 @@
 
 #include "FileContentWidget.h"
 FileContentWidget::FileContentWidget(QWidget *parent, QString fileContent) : QWidget(parent){
-    delete layout();
-    fileContentBox = new QTextEdit(this->parentWidget());
-    QVBoxLayout *layout = new QVBoxLayout(this);
+    initLayout();
 
     fileContentBox->setText(fileContent);
-    fileContentBox->setReadOnly(true);
-    layout->addWidget(fileContentBox);
-    setLayout(layout);
 }
 
-void FileContentWidget::printFileContent(QFile *file) {
-    QTextStream in(file);
-    QString fileContents = in.readAll();
-    fileContentBox->setText(fileContents);
+void FileContentWidget::initLayout() {
+    QGridLayout *grid = new QGridLayout;
+    QWidget *main = new QWidget(this);
+    QVBoxLayout *layout = new QVBoxLayout(this);
+
+    fileContentBox = new QTextEdit(this);
+    backToMenu = new QPushButton("Back");
+    backToMenu->setFixedSize(80, 30);
+
+    fileContentBox->setReadOnly(true);
+    layout->addWidget(fileContentBox);
+
+    main->setLayout(layout);
+    grid->addWidget(backToMenu, 0,0);
+    grid->addWidget(main, 1,0);
+
+    setLayout(grid);
 }

@@ -25,11 +25,14 @@ public:
     QString searchResult;
     QPushButton *searchButton;
     QLineEdit *edit;
+    QPushButton *backToMenu;
 //    MainWindow *m_parent;
 
 public slots:
     QFile *loadFile(QLineEdit *edit);
 private:
+    void initLayout();
+    void bindEvent();
     QWidget *main;
 };
 

@@ -19,6 +19,7 @@ class UpdateFile : public QWidget {
 Q_OBJECT
 public:
     UpdateFile(QWidget *parent);
+    QPushButton *backToMenu = new QPushButton("Back");
 
 private slots:
     void changeFileContents(QString target, QString rename);

@@ -10,39 +10,28 @@
 #include <QLayout>
 #include <QPushButton>
 #include <QMainWindow>
-#include "../mainwindow.h"
+//#include "../mainwindow.h"
 #include "../global.h"
 #include "SearchInput.h"
 #include "FileContentWidget.h"
 #include "UpdateFile.h"
 #include "DeleteFileWidget.h"
-
-using namespace std;
+#include "../components/MenuButton.h"
 
 class ButtonGroup : public QWidget {
 Q_OBJECT
 public:
     ButtonGroup
             (
-                    MainWindow *parent,
-                    SearchInput *searchWidget,
-                    FileContentWidget *contentWidget
-            );
+                    QWidget *parent
+//                    MainWindow *parent,
+//                    SearchInput *searchWidget,
+//                    FileContentWidget *contentWidget
+    );
 
-    MainWindow *m_parent;
+//    MainWindow *m_parent;
     SearchInput *m_searchWidget;
     FileContentWidget *m_contentWidget;
-
-private slots:
-    void saveNewFile(); // 파일 저장하기
-
-private:
-    void initLayout(); // 초기화
-    void bindButtonEvent(); // 버튼 이벤트 바인딩
-    void changeMenu(QString type); // 메뉴 전환
-    QVBoxLayout *vBoxLayout;
-    QString contents;
-
     QPushButton *fileLoad;
     QPushButton *filePrint;
     QPushButton *fileUpdate;
@@ -50,7 +39,14 @@ private:
     QPushButton *fileFind;
     QPushButton *fileSave;
     QPushButton *exit;
+
+private:
+    void initLayout(); // 초기화
+    QVBoxLayout *vBoxLayout;
+    QString contents;
 };
+
+using namespace std;
 
 
 #endif //DATABASE_PROJECT_BUTTONGROUP_H

@@ -4,6 +4,6 @@
 
 #include "MenuButton.h"
 MenuButton::MenuButton(QWidget *parent, QString buttonText) : QPushButton(parent){
-    setFixedSize(100,50);
+    setFixedSize(800,50);
     setText(buttonText);
 }

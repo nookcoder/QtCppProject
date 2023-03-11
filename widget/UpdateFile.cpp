@@ -31,11 +31,16 @@ void UpdateFile::changeFileContents(QString target, QString rename) {
 
 // 레이아웃 초기화
 void UpdateFile::initLayout() {
+    QGridLayout *grid = new QGridLayout;
+    QWidget *main = new QWidget(this);
+
     QVBoxLayout *parentLayout = new QVBoxLayout;
     QHBoxLayout *targetLayout = new QHBoxLayout;
     QHBoxLayout *renameLayout = new QHBoxLayout;
     QWidget *targetWidget = new QWidget;
     QWidget *renameWidget = new QWidget;
+    backToMenu->setFixedSize(80,30);
+
     fileContent = new QTextEdit(this->parentWidget());
     fileContent->setText(tempContents);
     fileContent->setReadOnly(true);
@@ -53,6 +58,9 @@ void UpdateFile::initLayout() {
     parentLayout->addWidget(changeButton);
     parentLayout->addWidget(fileContent);
 
+    main->setLayout(parentLayout);
+    grid->addWidget(backToMenu, 0,0);
+    grid->addWidget(main, 1, 0);
 
-    this->setLayout(parentLayout);
+    this->setLayout(grid);
 }

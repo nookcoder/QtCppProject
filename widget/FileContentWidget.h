@@ -9,17 +9,17 @@
 #include <QTextEdit>
 #include <QBoxLayout>
 #include <QFile>
+#include <QPushButton>
 
 class FileContentWidget : public QWidget{
     Q_OBJECT
 public:
     FileContentWidget(QWidget *parent= nullptr, QString fileContent="No Content");
     QTextEdit *fileContentBox;
-
-    void printFileContent(QFile *file);
+    QPushButton *backToMenu;
 
 private:
-
+    void initLayout();
 };
 
 

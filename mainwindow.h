@@ -4,9 +4,14 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QFile>
+#include <QBoxLayout>
+
 #include "widget/FileContentWidget.h"
 #include "widget/SearchInput.h"
-#include "components/MenuButton.h"
+#include "widget/UpdateFile.h"
+#include "widget/DeleteFileWidget.h"
+#include "widget/ButtonGroup.h"
+#include "widget/SaveFileWidget.h"
 #include "global.h"
 
 namespace Ui {
@@ -22,21 +27,28 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
 
 public:
-    // Fields
-    QWidget *rightWidget;
-    QVBoxLayout *rightLayout;
-    QFile *currentFile;
-    QString currentFileContents;
-
-    // Widgets
-    FileContentWidget *fileContentWidget;
-    SearchInput *searchWidget;
-
-    // Functions
-    void clearMainWidget();
 
 private:
-    void setInitLayout();
+    void initLayout();
+    void bindButtonGroupEvent();
+    void bindMenuButtonEvent(QPushButton *button, QString menu);
+    void bindBackToMenuEvent(QPushButton *button);
+    void backToMenu();
+    void clearMainWidget();
 
+    // Fields
+    QWidget *main;
+    QVBoxLayout *mainLayout;
+
+    // Widgets
+    ButtonGroup *buttonGroup;
+    FileContentWidget *fileContentWidget;
+    SearchInput *searchWidget;
+    UpdateFile *updateFileWidget;
+    DeleteFileWidget *deleteFileWidget;
+    SaveFileWidget *saveFileWidget;
+
+private slots:
+    void changeMenu(QString menu);
 };
 #endif // MAINWINDOW_H

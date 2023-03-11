@@ -1,64 +1,97 @@
-#include <QVBoxLayout>
 #include "mainwindow.h"
-#include "widget/SearchInput.h"
-#include "widget/ButtonGroup.h"
-#include "widget/FileContentWidget.h"
 
 MainWindow::MainWindow(QWidget *parent)
         : QMainWindow(parent) {
-    // init Field
-    rightWidget = new QWidget(this);
-    rightLayout = new QVBoxLayout(this);
-    currentFile = new QFile();
-
-    // init Widget
-    searchWidget = new SearchInput();
-    fileContentWidget = new FileContentWidget();
-
-    // set layout of main
-    setInitLayout();
+    initLayout();
+    bindButtonGroupEvent();
 
 }
 
-// 초기 레이아웃 셋팅
-void MainWindow::setInitLayout() {
-    ButtonGroup *buttonGroup = new ButtonGroup(this, searchWidget, fileContentWidget);
+void MainWindow::initLayout() {
+    buttonGroup = new ButtonGroup(this);
+    main = new QWidget(this);
+    mainLayout = new QVBoxLayout;
+    mainLayout->addWidget(buttonGroup);
+    main->setLayout(mainLayout);
+    setCentralWidget(main);
+};
 
-    QWidget *const main = new QWidget(this);
-    QHBoxLayout *const hBoxLayout = new QHBoxLayout;
-    rightWidget->setLayout(rightLayout);
-    hBoxLayout->addWidget(buttonGroup);
-    hBoxLayout->addWidget(rightWidget);
-    main->setLayout(hBoxLayout);
-    this->setCentralWidget(main);
+// 메뉴로 다시 돌아을 때 view, event 초기화
+void MainWindow::backToMenu() {
+    clearMainWidget();
+    buttonGroup = new ButtonGroup(this);
+    bindButtonGroupEvent();
+    mainLayout->addWidget(buttonGroup);
+    mainLayout->update();
 }
 
-// 위젯 바꾸기
+// 메뉴 버튼 이벤트 맵핑
+void MainWindow::bindButtonGroupEvent() {
+    bindMenuButtonEvent(buttonGroup->fileLoad, "load");
+    bindMenuButtonEvent(buttonGroup->filePrint, "print");
+    bindMenuButtonEvent(buttonGroup->fileUpdate, "update");
+    bindMenuButtonEvent(buttonGroup->fileDelete, "delete");
+    bindMenuButtonEvent(buttonGroup->fileSave, "save");
+}
+
+// 메뉴 버튼 이벤트 맵핑
+void MainWindow::bindMenuButtonEvent(QPushButton *button, QString menu) {
+    connect(button, &QPushButton::clicked,this, [this, menu](){
+        changeMenu(menu);
+    });
+}
+
+// 뒤로 가기 기능 맵핑
+void MainWindow::bindBackToMenuEvent(QPushButton *button) {
+    connect(button, &QPushButton::clicked, this, [this](){
+        backToMenu();
+    });
+}
+
+// 화면 지우기
 void MainWindow::clearMainWidget() {
-    while (QLayoutItem *item = this->rightWidget->layout()->takeAt(0)){
+    while (QLayoutItem *item = mainLayout->takeAt(0)){
         delete item->widget();
         delete item;
     }
 }
 
-//QTextEdit *fileContentTextEdit = new QTextEdit("jfjoasfjasiodjfioasjdfoi");
-//fileContentTextEdit->setReadOnly(true);
-//connect(fileLoadButton, &FileLoadButton::clicked, fileLoadButton, [=]() {
-//QFile *pFile = fileLoadButton->loadFile(searchWidget->searchResult);
-//if(pFile->exists()) {
-//QTextStream in(pFile);
-//QString fileContents = in.readAll();
-//fileContentTextEdit->setText(fileContents);
-//} else {
-//cout << "fail";
-//}
-//
-//});
-//
-//vboxlayout->addWidget(fileLoadButton);
-//vboxlayout->addWidget(fileContentTextEdit);
-//hBoxLayout->addLayout(vboxlayout);
-//hBoxLayout->addWidget(searchWidget);
-//
-//main->setLayout(hBoxLayout);
-//this->setCentralWidget(main);
+// 메뉴 이동
+void MainWindow::changeMenu(QString menu) {
+        this->clearMainWidget();
+
+        if (menu == "load"){
+            searchWidget = new SearchInput(this);
+            bindBackToMenuEvent(searchWidget->backToMenu);
+            mainLayout->addWidget(this->searchWidget);
+        }
+
+        else if(menu == "print"){
+            // init Widget && add
+            fileContentWidget = new FileContentWidget(this, currentFileContents);
+            bindBackToMenuEvent(fileContentWidget->backToMenu);
+            mainLayout->addWidget(this->fileContentWidget);
+        }
+
+        else if(menu == "update"){
+            updateFileWidget = new UpdateFile(this);
+            bindBackToMenuEvent(updateFileWidget->backToMenu);
+            mainLayout->addWidget(updateFileWidget);
+        }
+
+        else if(menu == "delete") {
+            deleteFileWidget = new DeleteFileWidget(this);
+            bindBackToMenuEvent(deleteFileWidget->back);
+            this->mainLayout->addWidget(deleteFileWidget);
+        }
+
+        else if(menu == "save") {
+            saveFileWidget = new SaveFileWidget(this);
+            bindBackToMenuEvent(saveFileWidget->backToMenu);
+            bindBackToMenuEvent(saveFileWidget->save);
+            this->mainLayout->addWidget(saveFileWidget);
+        }
+
+        this->mainLayout->update();
+}
+

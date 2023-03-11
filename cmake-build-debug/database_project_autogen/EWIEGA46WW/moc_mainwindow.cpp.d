@@ -308,8 +308,12 @@
   /Users/wook/Desktop/세종대/database-project/components/MenuButton.h \
   /Users/wook/Desktop/세종대/database-project/global.h \
   /Users/wook/Desktop/세종대/database-project/modal/ResultModal.h \
+  /Users/wook/Desktop/세종대/database-project/widget/ButtonGroup.h \
+  /Users/wook/Desktop/세종대/database-project/widget/DeleteFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/FileContentWidget.h \
+  /Users/wook/Desktop/세종대/database-project/widget/SaveFileWidget.h \
   /Users/wook/Desktop/세종대/database-project/widget/SearchInput.h \
+  /Users/wook/Desktop/세종대/database-project/widget/UpdateFile.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QFile \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtCore.framework/Versions/A/Headers/QString \
@@ -435,10 +439,12 @@
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QDialog \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QHBoxLayout \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QLayout \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QLineEdit \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QTextEdit \
+  /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /Users/wook/Development/qt/6.4.2/macos/lib/QtWidgets.framework/Versions/A/Headers/qboxlayout.h \

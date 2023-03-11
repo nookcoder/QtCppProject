@@ -18,6 +18,7 @@ class DeleteFileWidget : public QWidget{
 Q_OBJECT
 public:
     DeleteFileWidget(QWidget *parent = nullptr);
+    QPushButton *back = new QPushButton("Back");
 
 private slots:
     void deleteFileContents(QString target);

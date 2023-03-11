@@ -260,6 +260,12 @@
 			null
 		],
 		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SaveFileWidget.h",
+			"MU",
+			"UZBZ344ZLF/moc_SaveFileWidget.cpp",
+			null
+		],
+		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SearchInput.h",
 			"MU",
 			"UZBZ344ZLF/moc_SearchInput.cpp",
@@ -366,6 +372,11 @@
 		],
 		[
 			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FileContentWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SaveFileWidget.cpp",
 			"MU",
 			null
 		],
