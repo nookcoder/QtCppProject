@@ -52,16 +52,26 @@ void FindFileWidget::findContents() {
         resultModal->openModal();
         return;
     }
+
+    QTextCharFormat fmt;
+    contents->setText(currentFileContents);
+    fmt.setBackground(Qt::red);
+    QTextCursor cursor(contents->document());
     int index = currentFileContents.indexOf(targetString, 0);
+    bool isFind = false;
     while (index >= 0){
-        result.append(currentFileContents.mid(index, targetString.length()));
+        isFind=true;
+//        result.append(currentFileContents.mid(index, targetString.length()));
+        cursor.setPosition(index, QTextCursor::MoveAnchor);
+        cursor.setPosition(index + targetString.length(), QTextCursor::KeepAnchor);
+        cursor.setCharFormat(fmt);
         index = currentFileContents.indexOf(targetString, index + targetString.length());
     }
 
-    if(result.length() == 0){
+    if(!isFind){
+        contents->setText("");
         ResultModal *modal = new ResultModal(this, "Not Found");
         modal->openModal();
         return;
     }
-    contents->setText(result);
 }

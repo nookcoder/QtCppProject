@@ -33,9 +33,17 @@ void SaveFileWidget::bindEvent() {
 }
 
 void SaveFileWidget::saveFile() {
+    // 현재 파일이 제대로 열려있는 지 확인
+    if(!currentFile || !currentFile->isOpen()) {
+        ResultModal *modal = new ResultModal(this, "Please, Open a File Before Save");
+        modal->openModal();
+        return;
+    }
     const QString &filename = currentFile->fileName();
     currentFile->close();
     currentFile = new QFile(filename);
+
+    // 쓰기 모드로 파일 다시 열기
     if(currentFile->open(QIODevice::ReadWrite)) {
         currentFile->resize(0); // 파일 내용 초기화
         QTextStream stream(currentFile); // 파일 작업 시작

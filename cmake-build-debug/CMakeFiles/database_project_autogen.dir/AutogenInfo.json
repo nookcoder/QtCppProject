@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/database_project_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project",
+	"BUILD_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/database_project_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project",
 	"CMAKE_EXECUTABLE" : "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/CMakeLists.txt",
-		"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake",
+		"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/CMakeLists.txt",
+		"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake",
-		"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake",
+		"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake",
+		"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake",
@@ -212,81 +212,87 @@
 		"/Users/wook/Development/qt/6.4.2/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake",
 		"/Users/wook/Development/qt/6.4.2/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project",
-	"DEP_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/database_project_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project",
+	"DEP_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/database_project_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "database_project_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/components/MenuButton.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/components/MenuButton.h",
 			"MU",
 			"XDQFSXMG3O/moc_MenuButton.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/global.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/global.h",
 			"MU",
 			"EWIEGA46WW/moc_global.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/mainwindow.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/modal/ResultModal.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/modal/ResultModal.h",
 			"MU",
 			"ISKNNQD3YM/moc_ResultModal.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/ButtonGroup.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/AppendContentWidget.h",
+			"MU",
+			"UZBZ344ZLF/moc_AppendContentWidget.cpp",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/ButtonGroup.h",
 			"MU",
 			"UZBZ344ZLF/moc_ButtonGroup.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/DeleteFileWidget.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/DeleteFileWidget.h",
 			"MU",
 			"UZBZ344ZLF/moc_DeleteFileWidget.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FileContentWidget.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/FileContentWidget.h",
 			"MU",
 			"UZBZ344ZLF/moc_FileContentWidget.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FindFileWidget.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/FindFileWidget.h",
 			"MU",
 			"UZBZ344ZLF/moc_FindFileWidget.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SaveFileWidget.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/SaveFileWidget.h",
 			"MU",
 			"UZBZ344ZLF/moc_SaveFileWidget.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SearchInput.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/SearchInput.h",
 			"MU",
 			"UZBZ344ZLF/moc_SearchInput.cpp",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/UpdateFile.h",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/UpdateFile.h",
 			"MU",
 			"UZBZ344ZLF/moc_UpdateFile.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/database_project_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/database_project_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/database_project_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/database_project_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -328,76 +334,81 @@
 		"-c",
 		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/database_project_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/database_project_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/CMakeFiles/database_project_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/database_project_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/Users/wook/Development/qt/6.4.2/macos/./libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/Users/wook/Development/qt/6.4.2/macos/./libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
-	"SETTINGS_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug/CMakeFiles/database_project_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/database_project_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/components/MenuButton.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/components/MenuButton.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/global.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/global.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/main.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/mainwindow.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/mainwindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/modal/ResultModal.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/modal/ResultModal.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/ButtonGroup.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/AppendContentWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/DeleteFileWidget.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/ButtonGroup.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FileContentWidget.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/DeleteFileWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/FindFileWidget.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/FileContentWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SaveFileWidget.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/FindFileWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/SearchInput.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/SaveFileWidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"/Users/wook/Desktop/\uc138\uc885\ub300/database-project/widget/UpdateFile.cpp",
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/SearchInput.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/widget/UpdateFile.cpp",
 			"MU",
 			null
 		]

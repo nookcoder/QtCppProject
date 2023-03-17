@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "Release"
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-release"
+			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-release/CMakeFiles/pkgRedirects"
+			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project"
+			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -5927,7 +5927,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-release"
+			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-debug"
 		},
 		{
 			"name" : "database_project_IS_TOP_LEVEL",
@@ -5951,7 +5951,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project"
+			"value" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project"
 		}
 	],
 	"kind" : "cache",

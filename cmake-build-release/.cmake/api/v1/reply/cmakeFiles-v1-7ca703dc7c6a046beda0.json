@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeSystem.cmake"
+			"path" : "cmake-build-release/CMakeFiles/3.24.2/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -20,11 +20,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
+			"path" : "cmake-build-release/CMakeFiles/3.24.2/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
+			"path" : "cmake-build-release/CMakeFiles/3.24.2/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -893,8 +893,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-debug",
-		"source" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project"
+		"build" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-release",
+		"source" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project"
 	},
 	"version" : 
 	{

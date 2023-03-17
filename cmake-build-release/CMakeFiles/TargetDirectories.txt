@@ -1,5 +1,5 @@
-/Users/wook/Desktop/세종대/database-project/cmake-build-release/CMakeFiles/database_project.dir
-/Users/wook/Desktop/세종대/database-project/cmake-build-release/CMakeFiles/edit_cache.dir
-/Users/wook/Desktop/세종대/database-project/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/Users/wook/Desktop/세종대/database-project/cmake-build-release/CMakeFiles/database_project_autogen_timestamp_deps.dir
-/Users/wook/Desktop/세종대/database-project/cmake-build-release/CMakeFiles/database_project_autogen.dir
+/Users/wook/Desktop/세종대/projects/database-project/cmake-build-release/CMakeFiles/database_project.dir
+/Users/wook/Desktop/세종대/projects/database-project/cmake-build-release/CMakeFiles/edit_cache.dir
+/Users/wook/Desktop/세종대/projects/database-project/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/Users/wook/Desktop/세종대/projects/database-project/cmake-build-release/CMakeFiles/database_project_autogen_timestamp_deps.dir
+/Users/wook/Desktop/세종대/projects/database-project/cmake-build-release/CMakeFiles/database_project_autogen.dir

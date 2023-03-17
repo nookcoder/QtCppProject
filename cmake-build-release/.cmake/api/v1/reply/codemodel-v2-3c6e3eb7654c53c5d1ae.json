@@ -43,7 +43,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "database_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-database_project-Release-ecc05fe335602215b614.json",
+					"jsonFile" : "target-database_project-Release-894eee63756b49c84f60.json",
 					"name" : "database_project",
 					"projectIndex" : 0
 				},
@@ -67,8 +67,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project/cmake-build-release",
-		"source" : "/Users/wook/Desktop/\uc138\uc885\ub300/database-project"
+		"build" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project/cmake-build-release",
+		"source" : "/Users/wook/Desktop/\uc138\uc885\ub300/projects/database-project"
 	},
 	"version" : 
 	{
