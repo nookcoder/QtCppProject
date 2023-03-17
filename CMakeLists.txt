@@ -21,7 +21,7 @@ add_executable(database_project
         widget/ButtonGroup.h
         widget/FileContentWidget.cpp
         widget/FileContentWidget.h
-        components/MenuButton.cpp components/MenuButton.h global.cpp global.h widget/UpdateFile.cpp widget/UpdateFile.h widget/DeleteFileWidget.cpp widget/DeleteFileWidget.h widget/SaveFileWidget.cpp widget/SaveFileWidget.h widget/FindFileWidget.cpp widget/FindFileWidget.h)
+        components/MenuButton.cpp components/MenuButton.h global.cpp global.h widget/UpdateFile.cpp widget/UpdateFile.h widget/DeleteFileWidget.cpp widget/DeleteFileWidget.h widget/SaveFileWidget.cpp widget/SaveFileWidget.h widget/FindFileWidget.cpp widget/FindFileWidget.h widget/AppendContentWidget.cpp widget/AppendContentWidget.h)
 target_link_libraries(database_project
         Qt::Core
         Qt::Gui

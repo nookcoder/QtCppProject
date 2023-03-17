@@ -13,6 +13,7 @@
 #include "widget/ButtonGroup.h"
 #include "widget/SaveFileWidget.h"
 #include "widget/FindFileWidget.h"
+#include "widget/AppendContentWidget.h"
 #include "global.h"
 
 namespace Ui {
@@ -49,6 +50,7 @@ private:
     DeleteFileWidget *deleteFileWidget;
     SaveFileWidget *saveFileWidget;
     FindFileWidget *findFileWidget;
+    AppendContentWidget *insertFileWidget;
 
 private slots:
     void changeMenu(QString menu);

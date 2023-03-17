@@ -38,6 +38,7 @@ public:
     QPushButton *fileDelete;
     QPushButton *fileFind;
     QPushButton *fileSave;
+    QPushButton *insertFile;
     QPushButton *exit;
 
 private:

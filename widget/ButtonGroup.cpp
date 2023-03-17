@@ -17,6 +17,7 @@ void ButtonGroup::initLayout() {
     fileDelete = new MenuButton(this,"FileDelete");
     fileFind = new MenuButton(this, "FileFind");
     fileSave = new MenuButton(this, "FileSave");
+    insertFile = new MenuButton(this, "FileInsert");
     exit = new MenuButton(this, "Exit");
 
     // set Layout
@@ -28,6 +29,7 @@ void ButtonGroup::initLayout() {
     vBoxLayout->addWidget(fileDelete);
     vBoxLayout->addWidget(fileFind);
     vBoxLayout->addWidget(fileSave);
+    vBoxLayout->addWidget(insertFile);
     vBoxLayout->addWidget(exit);
 
     setLayout(vBoxLayout);

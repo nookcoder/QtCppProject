@@ -33,6 +33,7 @@ void MainWindow::bindButtonGroupEvent() {
     bindMenuButtonEvent(buttonGroup->fileDelete, "delete");
     bindMenuButtonEvent(buttonGroup->fileFind, "find");
     bindMenuButtonEvent(buttonGroup->fileSave, "save");
+    bindMenuButtonEvent(buttonGroup->insertFile, "insert");
     connect(buttonGroup->exit, &QPushButton::clicked, this, &QMainWindow::close);
 }
 
@@ -89,6 +90,10 @@ void MainWindow::changeMenu(QString menu) {
         bindBackToMenuEvent(saveFileWidget->backToMenu);
         bindBackToMenuEvent(saveFileWidget->save);
         this->mainLayout->addWidget(saveFileWidget);
+    } else if (menu == "insert") {
+        insertFileWidget = new AppendContentWidget(this);
+        bindBackToMenuEvent(insertFileWidget->back);
+        this->mainLayout->addWidget(insertFileWidget);
     }
 
     this->mainLayout->update();
