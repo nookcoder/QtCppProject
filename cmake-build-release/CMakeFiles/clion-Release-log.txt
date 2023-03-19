@@ -1,4 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/wook/Desktop/세종대/projects/database-project -B /Users/wook/Desktop/세종대/projects/database-project/cmake-build-release
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/wook/Desktop/세종대/projects/database-project/cmake-build-release
