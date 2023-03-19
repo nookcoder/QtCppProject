@@ -13,6 +13,7 @@
 #include <QBoxLayout>
 #include <QTextEdit>
 #include "../global.h"
+#include "../modal/ResultModal.h"
 class AppendContentWidget : public QWidget{
     Q_OBJECT
 public:
@@ -20,6 +21,8 @@ public:
     QPushButton *back = new QPushButton("Back");
 
 private:
+    ResultModal *resultModal;
+
     QLabel *label = new QLabel("Enter the Value");
     QLineEdit *value = new QLineEdit();
     QPushButton *insert = new QPushButton("Add");

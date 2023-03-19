@@ -40,6 +40,17 @@ void AppendContentWidget::initLayout() {
 }
 
 void AppendContentWidget::insertNewContents() {
+    if(!currentFile->isOpen() || !currentFile){
+        resultModal = new ResultModal(this, "Please Open File First");
+        resultModal->openModal();
+        return;
+    }
+
+    if(value->text().length() == 0){
+        resultModal = new ResultModal(this, "Please enter the value");
+        resultModal->openModal();
+        return;
+    }
     const QString &string = value->text();
     currentFileContents.push_back("\n" + string);
     contents->setText(currentFileContents);
